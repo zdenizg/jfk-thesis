@@ -6,18 +6,20 @@ This repository contains tools and results for extracting and analyzing text fro
 
 ```
 .
-├── ocr_missing_google.py        # Google Cloud Vision OCR script for the 55 missing PDFs
-├── missing_file_ids.txt         # List of 55 document IDs that were missing from the main dataset
-├── ocr_missing_output_google/   # OCR output: one .txt per document + summary.csv
-├── requirements.txt             # Python dependencies for the OCR script
+├── ocr_missing_google.py           # Google Cloud Vision OCR script for the 55 missing PDFs
+├── categorize_55_missing.py        # Classifies each page using Groq (type, difficulty, handwriting, etc.)
+├── check_missing_ids.py            # Verifies which of the 55 PDFs are present locally
+├── missing_file_ids.txt            # List of 55 document IDs missing from the main dataset
+├── requirements.txt                # Python dependencies for the OCR script
+├── Thesis_Proposal.pdf
 │
-├── manual/                      # Manually curated document index (shared project work)
-│   └── jfk_files_index_manual.xlsx
+├── ocr_missing_output_google/      # OCR text outputs (one .txt per document) + summary.csv
+├── results/                        # Categorization output (jfk_categorization_55missing.csv) + checkpoint
 │
-└── deniz/                       # Personal work directory
-    ├── Thesis_Proposal.pdf
-    ├── 55missing/               # Extended analysis of the 55 missing documents
-    └── manual/                  # Manual ground truth annotations + sample PDFs
+└── manual/                         # Ground truth annotations, sample PDFs, and document index
+    ├── jfk_files_index_manual.xlsx
+    ├── pdf files/                  # Sample PDFs used for OCR evaluation
+    └── Fwd_ JFK documents/         # Manually transcribed text files
 ```
 
 ## OCR Script (`ocr_missing_google.py`)
