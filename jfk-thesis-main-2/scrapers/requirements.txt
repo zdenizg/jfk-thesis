@@ -1,0 +1,17 @@
+PyPDF2
+pytesseract
+pdf2image
+Pillow
+opencv-python
+numpy
+groq
+python-Levenshtein
+pandas
+python-dotenv
+tqdm
+torch
+torchvision
+transformers
+accelerate
+safetensors
+vllm

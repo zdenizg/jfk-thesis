@@ -1,0 +1,61 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+
+# Checkpoints
+*_checkpoint.json
+*_progress.csv
+*_interrupted.csv
+*_error.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# IDE
+.vscode/
+.idea/
+EOF
+
+# PDF
+.PDF
+*.pdf
+*.PDF
+
+ocr_output/
+
+.db
+
+# PDFs
+*.pdf
+*.PDF
+
+# Databases
+*.db
+
+# OCR / outputs
+ocr_output/
+pdf_files/
+database/
