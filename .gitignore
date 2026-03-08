@@ -1,1 +1,6 @@
 google_credentials.json
+.DS_Store
+*.numbers
+node_modules/
+deniz/55missing/jfk_pdfs/
+JFK Pages Rows.csv
